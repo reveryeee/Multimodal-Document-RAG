@@ -37,7 +37,7 @@ for idx, row in df_chunks.iterrows():
         if text is None:
             text = ""
         text = str(text)
-        # 文本 embedding
+        # text embedding
         chunk_embedding = text_model.encode(text, convert_to_tensor=True)
 
     # 2. for IMG
