@@ -49,7 +49,7 @@ def retrieve_chunks(query_embedding, top_k=5):
 def ask_qwen_rag(question, retrieved_chunks, temperature=0.2, max_tokens=800):
     """
     question: user query
-    retrieved_chunks: list of dict, 每条 dict 包含 chunk info
+    retrieved_chunks: list of dict, each dict contains the chunk info
     """
     # System prompt
     system_prompt = (
